@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Imporant meta information to make the page as rigid as possible on mobiles, to avoid unintentional zooming on the page itself  -->
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>bharath.live</title>
+    <meta
+      property="og:title"
+      content="manyfist3D-create hyper realistic 3d characters"
+    />
+
+    <link rel="stylesheet" href="form.css" />
+    <meta property="og:image" content="assets/manyfist.in-3d characters.png" />
+
+    <link rel="stylesheet" href="main.css" />
+    <linmanyfist
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-175524651-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-175524651-1");
+    </script>
+  </head>
+  <body style="background-color: #f1f1f1;" >
+    <div class="loading" id="js-loader"><div class="loader">dwd</div></div>
+
+    <!-- The loading element overlays all else until the model is loaded, at which point we remove this element from the DOM -->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand text-3xl" href="#">Bharath</a>
+    </nav>
+
+    <div class="mainsec  ">
+      <div class="wrapper  ">
+        <h1 class="cta font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+         Hi! Im bharath <br /> <br/>
+        Fullstack javascript developer  
+        </h1>
+        
+        <!-- The canvas element is used to draw the 3D scene -->
+
+        <div id="renderer" style="background-color: #f1f1f1;" class="bg-white" >
+          <canvas class="bg-white" id="c"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="projects text-left">
+      <div>
+        <h1>Skills</h1>
+      </div>
+      <div class="frontend flex justify-center">
+        <div><h1>frontend</h1></div>
+        <div class="list text-sm flex justify-center">
+              <div class="flex justify-center align-center p-2 bg-gray-300 rounded-md  hover:bg-gray-200 mx-2">
+              <img src="assets/react.png"/> 
+              <h1  class="text-sm pl-2   pt-1">React</h1> 
+              </div>
+              <div class="flex justify-center align-center p-2 bg-gray-300 rounded-md  hover:bg-gray-200 mx-2">
+                <img src="https://nextjs.org/static/favicon/favicon-32x32.png"/> 
+                <h1  class="text-sm pl-2   pt-1">Next.js</h1> 
+                </div>
+        </div>
+      </div>
+
+      <div class="backend flex justify-center">
+        <div><h1>backend</h1></div>
+        <div class="list text-sm flex justify-center">
+              <div class="flex justify-center align-center p-2 bg-gray-300 rounded-md  hover:bg-gray-200 mx-2">
+              <img  style="width: 100px;" src="assets/postgress.png"/> 
+               </div>
+              <div class="flex justify-center align-center p-2 bg-gray-300 rounded-md  hover:bg-gray-200 mx-2">
+                <img src="assets/icons8-nodejs-48.png"/> 
+                 </div>
+                 <div class="flex justify-center align-center p-2 bg-gray-300 rounded-md  hover:bg-gray-200 mx-2">
+                  <img style="width: 90px;" src="assets/mongodb.png"/> 
+                   </div>
+                   <div class="flex justify-center align-center p-2 bg-gray-300 rounded-md  hover:bg-gray-200 mx-2">
+                    <img style="width: 90px;" src="assets/graphql.png"/> 
+                     </div>
+        </div>
+      </div>
+    </div>
+    <!-- The main Three.js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+
+    <!-- This brings in ccecee cwc the ability to load custom 3D objects in the .gltf file format. Blender allows the ability to export to this format out the box -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/Three.js@r92/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="./main.js"></script>
+    <script src="./deadpool.js"></script>
+    <script src="./robot.js"></script>
+    <script src="./mailer.js "></script>
+  </body>
+</html>
